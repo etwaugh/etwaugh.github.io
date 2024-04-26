@@ -30,10 +30,8 @@ print(f"Probabilities:")
 for i in range(len(class_ordered)):
     print(f"   {class_ordered[i]}: {probs[i]:.4f}")
 ```
-
-   This is a asian.
-   
-   Probabilities:
+    This is a asian.
+    Probabilities:
       aboriginal: 0.0000
       african: 0.0013
       asian: 0.9948
