@@ -20,17 +20,28 @@ The model is alright, but still not the best. Nonetheless, we will test it on a 
 
 ![image](https://github.com/etwaugh/etwaugh.github.io/assets/114034917/4d1014ed-3623-4e84-9d2d-37062f6885c8)
 
-This is a asian.
+```python
+# Predict on unseen data and show probability distribution
+category,_,probs = learn.predict(PILImage.create('test.jpg'))
+class_ordered = CIFAR10_classes.copy()
+class_ordered.sort()
+print(f"This is a {category}.\n")
+print(f"Probabilities:")
+for i in range(len(class_ordered)):
+    print(f"   {class_ordered[i]}: {probs[i]:.4f}")
+```
 
-Probabilities:
-   aboriginal: 0.0000
-   african: 0.0013
-   asian: 0.9948
-   caucasian: 0.0000
-   hispanic: 0.0009
-   middle eastern: 0.0007
-   native american: 0.0014
-   pacific islander: 0.0009
+   This is a asian.
+   
+   Probabilities:
+      aboriginal: 0.0000
+      african: 0.0013
+      asian: 0.9948
+      caucasian: 0.0000
+      hispanic: 0.0009
+      middle eastern: 0.0007
+      native american: 0.0014
+      pacific islander: 0.0009
 
 
 
