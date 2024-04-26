@@ -52,9 +52,7 @@ if not os.path.exists(MODEL_PATH) or RETRAIN:
 FastAI Model Train and Evaluation
 ```python
 learn = vision_learner(dls, resnet50, metrics=error_rate)
-batch_size = 64
-learn.dls[0].bs = batch_size
-learn.fine_tune(10)
+learn.fine_tune(100)
 ```
 
 What initially took several weeks of debugging and optimising to tune hyperparameters is packed into a simple function that already includes best practices and can be done within a day! No need for struggling through low-level coding when you can just have high-level abstractions. And since it is integrated with PyTorch (the superior framework for ML), I don't need to do any extra package management. 
