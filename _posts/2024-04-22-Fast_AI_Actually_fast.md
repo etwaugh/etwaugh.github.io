@@ -5,7 +5,7 @@ PyTorch for the thesis and [FastAI](https://github.com/fastai/fastai) for my cou
 does it actually increase the efficiency and simplicity of designing neural networks. The answer is *YES*.
 
 Just comparing code snippets for model training in my thesis and my coursework is a crazy comparison.
-'''python
+```python
 if not os.path.exists(MODEL_PATH) or RETRAIN:
     lr = 0.001
     momentum = 0.8
@@ -48,11 +48,11 @@ if not os.path.exists(MODEL_PATH) or RETRAIN:
                                                                                           100*running_correct/len(train_dataset),
                                                                                           100*testing_correct/len(test_dataset)))
         scheduler.step()
-'''
+```
 
-'''python
+```python
 learn = vision_learner(dls, resnet50, metrics=error_rate)
 batch_size = 64
 learn.dls[0].bs = batch_size
 learn.fine_tune(10)
-'''
+```
