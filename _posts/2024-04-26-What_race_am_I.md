@@ -41,5 +41,5 @@ for i in range(len(class_ordered)):
       native american: 0.0014
       pacific islander: 0.0009
 
-
+I guess I didn't really learn anything exciting from this so I'll probably have to test it on a different picture at another time
 
