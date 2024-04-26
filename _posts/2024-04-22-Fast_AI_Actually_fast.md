@@ -1,9 +1,10 @@
 # Is Fast AI actually Fast?
 
-Doing both a thesis in machine learning and a course in deep learning, I've gotten the privilege of experimenting with different AI packages, PyTorch for the thesis and [FastAI](https://github.com/fastai/fastai) for my coursework. Initially I wondered if the idea for FastAI worked in practicality - does it actually increase the efficiency and simplicity of designing neural networks. The answer is *YES*.
+Doing both a thesis in machine learning and a course in deep learning, I've gotten the privilege of experimenting with different AI packages, PyTorch for the thesis and [FastAI](https://github.com/fastai/fastai) for my coursework. Initially I wondered if the idea for FastAI worked in practicality - does it actually increase the efficiency and simplicity of designing neural networks. The answer is __*YES*__.
 
 Just comparing code snippets for model training in my thesis and my coursework is a crazy comparison.
-`PyTorch Model Train and Evaluate`
+
+`PyTorch Model Train and Evaluation`
 ```python
 if not os.path.exists(MODEL_PATH) or RETRAIN:
     lr = 0.001
