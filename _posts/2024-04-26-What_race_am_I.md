@@ -11,10 +11,13 @@ learn = vision_learner(dls, resnet50, metrics=error_rate, loss_func=CrossEntropy
 learn.fine_tune(10)
 ```
 ![image](https://github.com/etwaugh/etwaugh.github.io/assets/114034917/f2b01e55-3c70-4263-99e8-a94e5a6641b3)
+
 ![image](https://github.com/etwaugh/etwaugh.github.io/assets/114034917/47a2de56-0451-43e3-9052-9fee36683b9f)
+
 ![image](https://github.com/etwaugh/etwaugh.github.io/assets/114034917/51f6fe1f-e060-4519-bc8f-1518a3f239aa)
 
 The model is alright, but still not the best. Nonetheless, we will test it on a young photo of me on the internet.
+
 ![image](https://github.com/etwaugh/etwaugh.github.io/assets/114034917/4d1014ed-3623-4e84-9d2d-37062f6885c8)
 
 This is a asian.
