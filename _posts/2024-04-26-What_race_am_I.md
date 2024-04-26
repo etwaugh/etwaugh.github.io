@@ -41,5 +41,5 @@ for i in range(len(class_ordered)):
       native american: 0.0014
       pacific islander: 0.0009
 
-I guess I didn't really learn anything exciting from this so I'll probably have to test it on a different picture at another time. Then again, race is a very blurred line so I doubt AI will be able to come up with something definitive
+Well it's basically right! I was kind of hoping the probability distribution would perfectly match my ancestry, but that was a big stretch. I guess I didn't really learn anything exciting from this so I'll probably have to test it on a different picture and model at another time. Then again, race is a very blurred line so I doubt AI will be able to come up with something definitive
 
