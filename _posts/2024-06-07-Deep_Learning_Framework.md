@@ -12,3 +12,5 @@ I wanted to write a notebook where I summarise all of the random procedure I've 
    - Data augmentations. Best practice here is to presize to larger image first and then perform some data augmentations and then do a resize crop (RandomResizeCrop in FastAI). This is because augmentations can lead to degradation and artefacts on the image edges.
    - Pick a larger deeper architecture. Here is where ResNet50 is generally the best option
    - Move to SGD at some point and tune learning rate for it.
+
+I will update this more later
